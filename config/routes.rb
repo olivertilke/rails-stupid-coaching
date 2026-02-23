@@ -11,4 +11,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # if /ask askMethod question controller
+  get "/ask", to: "questions#ask"
+  # if form gets sent --> /answer
+  get "/answer", to: "questions#answer"
 end
